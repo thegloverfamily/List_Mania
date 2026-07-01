@@ -1,9 +1,36 @@
-Blank HTML Template for Building Packaged Mobile Web Apps
+List Mania - Mobile Web Apps Collection
 =========================================================
 
 Copyright © 2012-2015, Intel Corporation. All rights reserved.
 
 See [LICENSE.md](<LICENSE.md>) for license terms and conditions.
+
+## Applications
+
+### 🎯 Scrabble Word Finder
+**Location:** `www/scrabble.html`
+
+A comprehensive word-finding tool for Scrabble players that helps find the best scoring words from available tiles.
+
+**Features:**
+- Find all valid Scrabble words from your tiles
+- Support for blank tiles (wildcards)
+- Board letter integration for extended words
+- 7-letter bingo bonus calculation (+50 points)
+- Sort by score, length, or alphabetically
+- 5,000+ word dictionary (TWL - Tournament Word List)
+- Modern, responsive design
+- Click-to-copy word functionality
+
+**Usage:**
+1. Open `www/scrabble.html` in your browser
+2. Enter your tiles (A-Z, use ? for blanks)
+3. Optionally add letters already on the board
+4. Set minimum word length and sorting preference
+5. Click "Find Words" to see all possible words
+
+### 📝 List Mania (Original)
+**Location:** `www/index.html`
 
 This Intel XDK project has just an `index.html` file with the basic html, head
 and body tags required for building HTML5 mobile web apps. Use this template to
