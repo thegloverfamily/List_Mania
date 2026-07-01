@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Word Finder</title>
+    <link rel="stylesheet" href="css/scrabble.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Scrabble Word Finder</h1>
+            <p class="subtitle">Find the best scoring words from your tiles</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="tiles">Your Tiles (up to 7):</label>
+                    <input type="text" id="tiles" placeholder="e.g., ABCDEFG" maxlength="7" autocomplete="off">
+                    <small>Enter letters A-Z, use ? for blank tiles</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="boardLetters">Letters on Board (optional):</label>
+                    <input type="text" id="boardLetters" placeholder="e.g., CAT" autocomplete="off">
+                    <small>Letters already placed that you can build from</small>
+                </div>
+
+                <div class="options-grid">
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" id="useAllTiles">
+                            Must use all tiles (7-letter bonus)
+                        </label>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="minLength">Minimum word length:</label>
+                        <select id="minLength">
+                            <option value="2">2 letters</option>
+                            <option value="3">3 letters</option>
+                            <option value="4" selected>4 letters</option>
+                            <option value="5">5 letters</option>
+                            <option value="6">6 letters</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label for="sortBy">Sort results by:</label>
+                        <select id="sortBy">
+                            <option value="score">Score (highest first)</option>
+                            <option value="length">Length (longest first)</option>
+                            <option value="alpha">Alphabetical</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="findWords" class="btn-primary">Find Words</button>
+            </section>
+
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h2>Results</h2>
+                    <div class="stats" id="stats"></div>
+                </div>
+                
+                <div class="word-list" id="wordList"></div>
+            </section>
+
+            <section class="info-section">
+                <details>
+                    <summary>📖 Tile Values & Rules</summary>
+                    <div class="tile-values">
+                        <div class="value-group">
+                            <strong>1 point:</strong> A, E, I, O, U, L, N, S, T, R
+                        </div>
+                        <div class="value-group">
+                            <strong>2 points:</strong> D, G
+                        </div>
+                        <div class="value-group">
+                            <strong>3 points:</strong> B, C, M, P
+                        </div>
+                        <div class="value-group">
+                            <strong>4 points:</strong> F, H, V, W, Y
+                        </div>
+                        <div class="value-group">
+                            <strong>5 points:</strong> K
+                        </div>
+                        <div class="value-group">
+                            <strong>8 points:</strong> J, X
+                        </div>
+                        <div class="value-group">
+                            <strong>10 points:</strong> Q, Z
+                        </div>
+                        <div class="value-group">
+                            <strong>Blank tiles (?):</strong> 0 points (can be any letter)
+                        </div>
+                        <div class="value-group">
+                            <strong>7-letter bonus:</strong> +50 points for using all tiles
+                        </div>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>ℹ️ How to Use</summary>
+                    <div class="instructions">
+                        <ol>
+                            <li>Enter your available tiles (letters A-Z)</li>
+                            <li>Use ? for blank tiles that can be any letter</li>
+                            <li>Optionally add letters already on the board to find words that extend them</li>
+                            <li>Choose your preferences (minimum length, sorting)</li>
+                            <li>Click "Find Words" to see all possible words ranked by score</li>
+                        </ol>
+                        <p><strong>Note:</strong> Base scores shown are for tiles only. Actual game scores depend on board multipliers (Double/Triple Letter/Word scores).</p>
+                    </div>
+                </details>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built for Scrabble enthusiasts • Dictionary: TWL (Tournament Word List)</p>
+        </footer>
+    </div>
+
+    <script src="js/scrabble-dictionary.js"></script>
+    <script src="js/scrabble-solver.js"></script>
+    <script src="js/scrabble-ui.js"></script>
+</body>
+</html>
