@@ -1,37 +1,166 @@
-Blank HTML Template for Building Packaged Mobile Web Apps
-=========================================================
+# MCM Birmingham Comic Con 2026 - Friday Guests & Funko Pop Finder
 
-Copyright © 2012-2015, Intel Corporation. All rights reserved.
+A comprehensive, searchable, and filterable web application for discovering which MCM Birmingham Comic Con 2026 Friday guests have characters with available Funko Pop figures.
 
-See [LICENSE.md](<LICENSE.md>) for license terms and conditions.
+## Features
 
-This Intel XDK project has just an `index.html` file with the basic html, head
-and body tags required for building HTML5 mobile web apps. Use this template to
-create a *packaged mobile web app* that does not use any device features.
+### 🔍 **Search Functionality**
+- Real-time search across guest names, character names, and franchises
+- Instant filtering as you type with debounced search
 
-The `icon.png` and `screenshot.png` files are not required by your project. They
-are included for use by the Intel XDK template/demo panel and have no use within
-a real app. You can safely delete them from your project directory.
+### 🎯 **Advanced Filtering**
+- **Day Filter**: View guests by attendance day (Friday, Saturday, Sunday, or All)
+- **Funko Pop Filter**: Show only guests with Funko Pops or those without
+- **Media Type Filter**: Filter by Live Action, Animation, or Video Games
 
-You can build a *packaged Cordova web app* that can be submitted to a store
-using the "Cordova Hybrid Mobile App Platforms” build tiles (for Crosswalk,
-Android, iOS and Windows). The `intelxdk.config.additions.xml` file can be used
-to include options that control your *packaged Cordova web app* builds. For
-example, you can set the splash screen display time for a packaged Android or
-Crosswalk Cordova app using this file.
+### ✅ **Selection & Export**
+- Select individual Funko Pop characters you're interested in
+- View all selected characters in a dedicated summary section
+- Export your selection to CSV for reference
+- Bulk select/deselect all visible characters
 
-If you convert (or upgrade) your "Standard HTML5 Project" into a "Standard
-HTML5 + Cordova Project" you must comment out the noted script files
-inside the provided index.html file.
+### 📊 **Guest Information**
+Each guest card displays:
+- Guest name and attendance days
+- Complete credits including:
+  - Character/role names
+  - Franchise information
+  - Years active
+  - Media type (with icons)
+- Full Funko Pop catalogue for characters with available figures
+- Pop numbers, names, and variant information
 
-The `cordova.js` script will be needed if you choose to convert your project to
-a *Cordova project* and enhance your app with Cordova APIs. It is not required
-to build a *Cordova packaged web app* for distribution via the Android, iOS and
-Windows stores *if that app does not utilize Cordova APIs*.
+## Guests Featured (Friday Attendees)
 
-This blank template does not require any Cordova APIs. If you would like to add
-Cordova APIs to your application (via Cordova plugins) you must first convert
-your project into a Cordova project. You can do this by clicking the Cordova
-icon in the *Project Info* section on the **Projects** tab. Or, you can create a
-new Cordova project using a Cordova blank template or a Cordova demo or sample
-app as a starting point.
+### Live Action & Voice Acting Stars
+1. **Charlie Cox** - Daredevil/Matt Murdock (Marvel)
+2. **Deborah Ann Woll** - Karen Page (Daredevil), Jessica Hamby (True Blood)
+3. **Khary Payton** - King Ezekiel (The Walking Dead), Cyborg (Teen Titans)
+
+### Video Game Voice Legends
+4. **Neil Newbon** - Astarion (Baldur's Gate 3), Karl Heisenberg (RE Village)
+5. **Alex Jordan** - Rook (Dragon Age), Mr Hands (Cyberpunk 2077)
+6. **Harry McEntire** - Noah (Xenoblade Chronicles 3), Eivor (AC Valhalla)
+7. **Anjali Bhimani** - Symmetra (Overwatch), Rampart (Apex Legends)
+8. **John Eric Bentley** - Barret Wallace (Final Fantasy VII Remake/Rebirth)
+
+### Anime Voice Acting All-Stars
+9. **Bryce Papenbrook** - Eren Yeager (Attack on Titan), Kirito (Sword Art Online)
+10. **Cassandra Lee Morris** - Morgana (Persona 5), Leafa (Sword Art Online)
+11. **Kirk Thornton** - Shadow the Hedgehog, Kisame (Naruto)
+12. **Suzie Yeung** - Yuffie (Final Fantasy VII), Makima (Chainsaw Man)
+13. **Todd Haberkorn** - Natsu (Fairy Tail), Death the Kid (Soul Eater)
+
+### Rising Stars
+14. **Britt Baron** - Tifa (Final Fantasy VII Remake/Rebirth)
+15. **Patrick Gibson** - Young Dexter (Dexter: Original Sin), Nikolai (Shadow and Bone)
+
+## Funko Pop Database
+
+The application includes comprehensive Funko Pop data for:
+
+### Marvel Cinematic Universe
+- **Daredevil**: 12+ variants including Netflix series, Born Again, and 60th Anniversary
+- **True Blood**: Jessica Hamby
+
+### DC Universe
+- **Teen Titans/Justice League**: 7+ Cyborg variants
+- **The Walking Dead**: King Ezekiel
+
+### Video Games
+- **Baldur's Gate 3**: Astarion (3 variants)
+- **Detroit: Become Human**: Elijah Kamski
+- **Resident Evil**: Karl Heisenberg, Nicholai
+- **Overwatch**: Symmetra
+- **Apex Legends**: Rampart
+- **Cyberpunk 2077**: Multiple characters
+- **Assassin's Creed Valhalla**: Eivor (Male/Female)
+- **Xenoblade Chronicles 3**: Noah
+- **Sonic**: Shadow the Hedgehog (5+ variants)
+- **Persona 5**: Morgana, Fuuka
+- **Genshin Impact**: Eula
+- **Starfield**: Constellation Member
+
+### Anime
+- **Attack on Titan**: Eren Yeager (8+ variants), Kisame, Shukaku
+- **Sword Art Online**: Kirito (3+ variants), Leafa
+- **Demon Slayer**: Inosuke Hashibira
+- **Fairy Tail**: Natsu Dragneel
+- **Soul Eater**: Death the Kid
+- **Chainsaw Man**: Makima
+- **The Seven Deadly Sins**: Meliodas
+- **Kingdom Hearts**: Saïx
+- **Naruto**: Multiple characters
+
+### TV Shows
+- **Dexter**: Multiple variants including Original Sin
+- **Shadow and Bone**: Nikolai Lantsov
+
+## Technical Details
+
+### Built With
+- Pure HTML5, CSS3, and Vanilla JavaScript
+- No external dependencies or frameworks
+- Fully responsive design
+- Print-friendly stylesheet
+- Accessible markup and keyboard navigation
+
+### Browser Support
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile responsive
+- Supports touch and mouse interactions
+
+## Data Sources
+
+Information compiled from:
+- MCM Comic Con Birmingham official website
+- IMDB (Internet Movie Database)
+- Wikipedia
+- Behind the Voice Actors
+- Funko official databases
+- Pop Price Guide
+- Various Funko collector resources
+
+## Usage
+
+1. Open `index.html` in your web browser
+2. Use the search box to find specific guests or characters
+3. Apply filters to narrow down results
+4. Click checkboxes next to Funko Pops you're interested in
+5. View your selection in the summary section
+6. Export to CSV for your shopping list
+
+## Event Information
+
+**MCM Birmingham Comic Con 2026**
+- **Dates**: 7-9 August 2026
+- **Venue**: NEC Birmingham, Pendigo Way, Marston Green, Birmingham B40 1NT
+- **Website**: https://www.mcmcomiccon.com/birmingham/
+
+## Notes
+
+- **Friday Schedule**: All 15 guests listed are confirmed for Friday attendance
+- **Final Fantasy VII**: Square Enix produces their own collectible figures (not Funko Pops)
+- **Availability**: Funko Pop availability and exclusives may vary by region
+- **Prices**: Not included as they fluctuate based on rarity and market conditions
+
+## Future Enhancements
+
+Potential additions for future versions:
+- Photo op and autograph scheduling
+- Guest panel times
+- Vendor booth locations for Funko Pops
+- Price estimates and eBay integration
+- Mobile app version
+- Social sharing features
+- Personal collection tracking
+
+## License
+
+This is a fan-made resource for informational purposes. All character names, franchises, and Funko Pop trademarks belong to their respective owners.
+
+---
+
+**Last Updated**: July 2026
+
+For corrections or additions, please submit issues or pull requests.

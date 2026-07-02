@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCM Birmingham Comic Con - Friday Guests & Funko Pops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MCM Birmingham Comic Con 2026</h1>
+        <h2>Friday Guests & Their Funko Pop Characters</h2>
+        <p class="event-info">7-9 August 2026 | NEC Birmingham</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search guests, characters, or franchises...">
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="dayFilter">Day Attending:</label>
+                    <select id="dayFilter">
+                        <option value="all">All Days</option>
+                        <option value="friday" selected>Friday Only</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="funkoPopsFilter">Has Funko Pops:</label>
+                    <select id="funkoPopsFilter">
+                        <option value="all">All</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="mediaTypeFilter">Media Type:</label>
+                    <select id="mediaTypeFilter">
+                        <option value="all">All Types</option>
+                        <option value="live-action">Live Action</option>
+                        <option value="animation">Animation</option>
+                        <option value="video-games">Video Games</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="selectAllBtn">Select All</button>
+                <button id="deselectAllBtn">Deselect All</button>
+                <button id="exportSelectedBtn">Export Selected</button>
+            </div>
+            
+            <div class="stats">
+                <span id="statsDisplay">Showing 0 guests with 0 Funko Pop characters</span>
+            </div>
+        </div>
+
+        <div id="guestsContainer"></div>
+        
+        <div id="selectedSummary" class="selected-summary hidden">
+            <h3>Selected Characters (<span id="selectedCount">0</span>)</h3>
+            <div id="selectedList"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Data compiled from MCM Comic Con Birmingham official website, IMDB, Wikipedia, and Funko Pop databases</p>
+        <p>Last updated: July 2026</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
